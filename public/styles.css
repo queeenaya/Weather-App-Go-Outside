@@ -1,0 +1,218 @@
+body {
+  font-family: "Montserrat";
+  background-color: #d6e6f2; /* #f7fbfc;*/
+}
+
+.container-fluid {
+  padding: 0% 0%;
+}
+
+/* Navigation Bar */
+#NavBar {
+  position: relative;
+  padding-bottom: 60px;
+  color: #3b6fa9;
+}
+
+.navbar {
+  color: #3b6fa9; /* #1687a7; */
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 2rem;
+}
+
+#NavBar a {
+  color: white;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+
+.d-flex {
+  padding-right: 2rem;
+}
+
+/* Main Page */
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 0px 0px #769fcd;
+  box-shadow: 0 0 0px 0px #769fcd;
+  background-color: #85b0db; /*#b9d7ea;*/
+  color: #ffffff;
+  height: 400px;
+  width: 1000px;
+  margin-top: 25px;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: repeat(2, 550px);
+}
+
+.day-weather {
+  position: relative;
+  height: 400px;
+  border-radius: 25px;
+  background-color: #d6e6f2;
+  background-image: url("https://images.unsplash.com/photo-1572003818138-19cf96ee15e7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2t5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  width: 500px;
+  -webkit-box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  float: left;
+}
+
+.day-weather:hover {
+  -webkit-transform: scale(1.09) perspective(0px);
+  transform: scale(1.09) perspective(0);
+}
+
+.weather-gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: var(--gradient);
+  border-radius: 25px;
+  opacity: 0.8;
+}
+
+.date-container {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.date-dayname {
+  margin: auto;
+  font-size: 2rem;
+}
+
+.date-day {
+  display: block;
+  margin: auto;
+}
+
+.location {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.location-icon {
+  display: inline-block;
+  height: 1rem;
+  width: auto;
+  margin-right: 10px;
+}
+
+.weather-container {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.weather-temp {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.weather-icon {
+  display: inline-block;
+  height: 3rem;
+  width: auto;
+  margin-right: 0px;
+}
+
+.weather-desc {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.info-side {
+  position: relative;
+  float: right;
+  height: 100%;
+  padding-top: 40px;
+}
+
+.today-info .clear {
+  clear: left;
+}
+
+.today-info {
+  padding: 15px;
+  margin: 0 25px 0px 0px;
+  /*  box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25); */
+  border-radius: 10px;
+}
+
+.description {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.today-info > div .title {
+  float: left;
+  font-weight: 700;
+  padding: 10px 0 10px 0px;
+  margin-left: 30px;
+  font-size: large;
+}
+
+.today-info > div .value {
+  float: right;
+  font-size: large;
+  margin-right: 10px;
+}
+
+.clear {
+  float: left;
+}
+
+@media (max-width: 990px) {
+  .day-weather {
+    position: relative;
+    margin: auto;
+  }
+
+  .container {
+    height: 900px;
+    width: 60%;
+    margin-top: 250px;
+  }
+
+  #NavBar {
+    width: 100%;
+  }
+
+  .info-side {
+    position: relative;
+    padding-top: 0;
+  }
+  .container-fluid {
+    position: relative;
+    align-items: center;
+  }
+
+  @media (max-width: 477) {
+    .day-weather {
+      position: relative;
+    }
+  }
+}
